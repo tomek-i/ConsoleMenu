@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>ConsoleMenu.Demo</AssemblyName>
+    <StartupObject>ConsoleMenuDemo.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleMenu\ConsoleMenu.csproj" />
+  </ItemGroup>
+
+</Project>
