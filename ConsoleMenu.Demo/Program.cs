@@ -41,26 +41,30 @@ namespace ConsoleMenuDemo
                             int code = i * 16 + j;
                             Console.Write($"{AnsiCodes.EscapeSequence}38;5;{code}m" + code.ToString().PadLeft(4));
                         }
-                    }
 
+                    }
+                    Console.WriteLine();
                     for (int i = 0; i < 16; i++)
                     {
                         for (int j = 0; j < 16; j++)
                         {
                             int code = i * 16 + j;
                             Console.Write($"{AnsiCodes.EscapeSequence}48;5;{code}m" + code.ToString().PadLeft(4));
+
                         }
                     }
+                    Console.WriteLine();
                     Console.Write(AnsiCodes.Reset);
+
                 }
                 ));
-
+       
             menu.AddMenuItem(new ActionMenuItem(
                 "l",
                 "Loading Animation",
                 "Showcasing some loading animations done with ansi codes.", () =>
                 {
-
+                    Console.CursorVisible = false;
                     Console.WriteLine("Loading...");
 
                     for (int i = 0; i < 100; i++)
@@ -122,23 +126,23 @@ namespace ConsoleMenuDemo
 
             menu.AddMenuItem(new ActionMenuItem(
                "s",
-               "Show me some ฿ymbols",
+               "Show me some Symbols ==> ฿",
                "Yeah.", () =>
                {
                    Console.OutputEncoding = Encoding.Unicode;
-                   var dim = (Console.WindowHeight * Console.WindowWidth)/2;
+                   var dim = (Console.WindowHeight * Console.WindowWidth) / 2;
 
-                   for (int i = 0; i <= 16*16*16; i++)
+                   for (int i = 0; i <= 16 * 16 *16*8; i++)
                    {
-                      
+
                        Console.Write($"{(char)i} ");
                        Thread.Sleep(1);
                        if (i % dim == 0)
                        {
-                           if(i!=0)
-                           Thread.Sleep(2000);
+                           if (i != 0)
+                               Thread.Sleep(1000);
                            Console.Clear();
-                           
+
                        }
                    }
 
