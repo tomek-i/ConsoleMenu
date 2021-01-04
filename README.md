@@ -11,6 +11,9 @@ The menu items / selectors are not restricted to single characters. you can mix 
 ![Sub Menus](/assets/sub-menu.png?raw=true "Sub Menu Demo")
 You can have nested menu's and they follow the same principles, exiting the submenus will get you back to the parent menu.
 
+![Help Menu](/assets/help.png?raw=true "Customizable help")
+Customizable help
+
 ![Color Display](/assets/rainbow.png?raw=true "Rainbow Demo")
 Extended Colors
 
