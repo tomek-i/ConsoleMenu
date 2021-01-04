@@ -15,5 +15,5 @@ You can have nested menu's and they follow the same principles, exiting the subm
 Extended Colors
 
 ![Loading Bars](/assets/loadingbars.png?raw=true "Loading bar Demo")
-Repositions the cursors to animate the loading bars.
+Repositions the cursor through ANSI codes for smooth animations.
 
