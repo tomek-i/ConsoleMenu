@@ -18,5 +18,5 @@ Customizable help
 Extended Colors
 
 ![Loading Bars](/assets/loadingbars.png?raw=true "Loading bar Demo")
-Repositions the cursors to animate the loading bars.
+Repositions the cursor through ANSI codes for smooth animations.
 
